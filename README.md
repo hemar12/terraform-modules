@@ -15,6 +15,9 @@
   
   cd Terraform_modules/modules
 
+<img width="1132" alt="image" src="https://github.com/user-attachments/assets/46a24935-4497-4f95-acf6-5d74dc1c6cbf" />
+
+
 ## To run a IAM user code. 
    cd iam                               => change directory to "iam" folder. 
    
