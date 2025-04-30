@@ -20,9 +20,9 @@
    
    terraform init                 => To initialize your reposotory 
    
-   terraform plan 
+   terraform plan                => To check the IAM plan
    
-   terraform apply 
+   terraform apply              => To IAM apply 
    
 
    
