@@ -1,9 +1,9 @@
 # Terraform_modules
 
 ## How to configure your AWS account with Visual studio code. 
-  AWS Access Key ID [****************]: <your AWS account AWS Access >
+  AWS Access Key ID [****************]: your AWS account AWS Access
   
-  AWS Secret Access Key [****************]: <<your AWS account AWS Secret key>     
+  AWS Secret Access Key [****************]: your AWS account AWS Secret key  
   
   Default region name []: ap-south-1 
   
