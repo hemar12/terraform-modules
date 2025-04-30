@@ -8,14 +8,14 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "public_1" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.1.0/24"
-  availability_zone       = "us-east-1a"
+  availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = true
 }
 
 resource "aws_subnet" "public_2" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.2.0/24"
-  availability_zone       = "us-east-1b"
+  availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = true
 }
 
@@ -71,10 +71,10 @@ resource "aws_lb" "app_lb" {
 
 # Target Group
 resource "aws_lb_target_group" "tg" {
-  name     = "demo-tg"
-  port     = 80
-  protocol = "HTTP"
-  vpc_id   = aws_vpc.main.id
+  name        = "demo-tg"
+  port        = 80
+  protocol    = "HTTP"
+  vpc_id      = aws_vpc.main.id
   target_type = "instance"
 }
 
@@ -92,11 +92,11 @@ resource "aws_lb_listener" "listener" {
 
 # EC2 Instance 1
 resource "aws_instance" "web1" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 (us-east-1)
-  instance_type = "t2.micro"
-  subnet_id     = aws_subnet.public_1.id
+  ami             = "ami-0f1dcc636b69a6438"  # Make sure to use the correct AMI for the specific region.
+  instance_type   = "t2.micro"
+  subnet_id       = aws_subnet.public_1.id
   security_groups = [aws_security_group.ec2_sg.name]
-  user_data = <<-EOF
+  user_data       = <<-EOF
               #!/bin/bash
               echo "Hello from EC2 instance 1" > /var/www/html/index.html
               sudo yum install -y httpd
@@ -111,11 +111,11 @@ resource "aws_instance" "web1" {
 
 # EC2 Instance 2
 resource "aws_instance" "web2" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 (us-east-1)
-  instance_type = "t2.micro"
-  subnet_id     = aws_subnet.public_2.id
+  ami             = "ami-0f1dcc636b69a6438"  # Make sure to use the correct AMI for the specific region.
+  instance_type   = "t2.micro"
+  subnet_id       = aws_subnet.public_2.id
   security_groups = [aws_security_group.ec2_sg.name]
-  user_data = <<-EOF
+  user_data       = <<-EOF
               #!/bin/bash
               echo "Hello from EC2 instance 2" > /var/www/html/index.html
               sudo yum install -y httpd
