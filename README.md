@@ -13,9 +13,13 @@
 
 ## To run a IAM user code. 
    cd iam                         => change directory to "iam" folder. 
+   
    terraform init                 => To initialize your reposotory 
+   
    terraform plan 
+   
    terraform apply 
+   
 
    
   
