@@ -83,7 +83,7 @@
   terraform destroy --auto-approve     => To destroy the resources created 
 
 ## To run a alb  code. 
-   cd s3                         => change directory to "s3" folder. 
+   cd alb                         => change directory to "alb" folder. 
    
    terraform init                 => To initialize your reposotory 
 
@@ -93,9 +93,9 @@
    terraform vaidate                   => to vdalidate the syntax 
 
    
-   terraform plan                => To check the s3 plan
+   terraform plan                => To check the alb plan
    
-   terraform apply  --auto-approve            => To s3 apply 
+   terraform apply  --auto-approve            => To alb apply 
 
   terraform destroy --auto-approve     => To destroy the resources created 
 
