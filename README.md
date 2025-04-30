@@ -98,6 +98,24 @@
 
 
 
+# To run the module , follow the below steps. 
+
+ <img width="920" alt="image" src="https://github.com/user-attachments/assets/9151e4cd-37e0-4db1-b2e0-cac249cc1f1d" />
+
+Make sure that you are under "Terraform_modules" directory. 
+
+terraform init                 => To initialize your reposotory
+
+   terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
+
+   terraform plan                => To check the module plan
+   
+   terraform apply  --auto-approve            => To module apply 
+
+  terraform destroy --auto-approve     => To destroy the module resouces created 
+
 
    
   
