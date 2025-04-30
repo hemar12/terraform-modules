@@ -2,13 +2,17 @@
 
 ## How to configure your AWS account with Visual studio code. 
   AWS Access Key ID [****************]: <your AWS account AWS Access >
-  AWS Secret Access Key [****************]: <<your AWS account AWS Secret key>                        
+  
+  AWS Secret Access Key [****************]: <<your AWS account AWS Secret key>     
+  
   Default region name []: ap-south-1 
+  
   Default output format [text]: text
  
 ## How to clone the terraform modules.
 
-  git clone  https://github.com/cloudinstitution/Terraform_modules.git
+  git clone  https://github.com/cloudinstitution/Terraform_modules.git    
+  
   cd Terraform_modules/modules
 
 ## To run a IAM user code. 
