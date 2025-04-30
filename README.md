@@ -16,13 +16,13 @@
   cd Terraform_modules/modules
 
 ## To run a IAM user code. 
-   cd iam                         => change directory to "iam" folder. 
+   cd iam                               => change directory to "iam" folder. 
    
-   terraform init                 => To initialize your reposotory 
+   terraform init                       => To initialize your reposotory 
    
-   terraform plan                => To check the IAM plan
+   terraform plan                       => To check the IAM plan
    
-   terraform apply              => To IAM apply 
+   terraform apply --auto-approve       => To IAM apply 
    
 
 ## To run a EC2 user code. 
@@ -32,7 +32,7 @@
    
    terraform plan                => To check the Ec2 plan
    
-   terraform apply              => To Ec2 apply 
+   terraform apply  --auto-approve            => To Ec2 apply 
 ## To run a VPC user code. 
    cd vpc                         => change directory to "vpc" folder. 
    
@@ -40,7 +40,7 @@
    
    terraform plan                => To check the vpc plan
    
-   terraform apply              => To vpc apply 
+   terraform apply  --auto-approve            => To vpc apply 
 
 
    
