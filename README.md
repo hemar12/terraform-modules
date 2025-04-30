@@ -25,5 +25,23 @@
    terraform apply              => To IAM apply 
    
 
+## To run a EC2 user code. 
+   cd ec2                         => change directory to "ec2" folder. 
+   
+   terraform init                 => To initialize your reposotory 
+   
+   terraform plan                => To check the Ec2 plan
+   
+   terraform apply              => To Ec2 apply 
+## To run a VPC user code. 
+   cd vpc                         => change directory to "vpc" folder. 
+   
+   terraform init                 => To initialize your reposotory 
+   
+   terraform plan                => To check the vpc plan
+   
+   terraform apply              => To vpc apply 
+
+
    
   
