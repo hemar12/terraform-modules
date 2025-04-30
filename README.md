@@ -19,28 +19,84 @@
    cd iam                               => change directory to "iam" folder. 
    
    terraform init                       => To initialize your reposotory 
+
+   terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
    
    terraform plan                       => To check the IAM plan
    
    terraform apply --auto-approve       => To IAM apply 
    
+   terraform destroy --auto-approve     => To destroy the resources created 
+   
 
-## To run a EC2 user code. 
+## To run a EC2  code. 
    cd ec2                         => change directory to "ec2" folder. 
    
    terraform init                 => To initialize your reposotory 
+
+   terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
    
    terraform plan                => To check the Ec2 plan
    
    terraform apply  --auto-approve            => To Ec2 apply 
-## To run a VPC user code. 
+
+   terraform destroy --auto-approve     => To destroy the resources created 
+
+## To run a VPC  code. 
    cd vpc                         => change directory to "vpc" folder. 
    
    terraform init                 => To initialize your reposotory 
+
+    terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
+   
    
    terraform plan                => To check the vpc plan
    
    terraform apply  --auto-approve            => To vpc apply 
+
+  terraform destroy --auto-approve     => To destroy the resources created 
+
+  
+## To run a s3  code. 
+   cd s3                         => change directory to "s3" folder. 
+   
+   terraform init                 => To initialize your reposotory 
+
+  terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
+   
+   
+   terraform plan                => To check the s3 plan
+   
+   terraform apply  --auto-approve            => To s3 apply 
+
+  terraform destroy --auto-approve     => To destroy the resources created 
+
+## To run a alb  code. 
+   cd s3                         => change directory to "s3" folder. 
+   
+   terraform init                 => To initialize your reposotory 
+
+
+   terraform fmt                       => To format the code
+
+   terraform vaidate                   => to vdalidate the syntax 
+
+   
+   terraform plan                => To check the s3 plan
+   
+   terraform apply  --auto-approve            => To s3 apply 
+
+  terraform destroy --auto-approve     => To destroy the resources created 
+
+
 
 
    
