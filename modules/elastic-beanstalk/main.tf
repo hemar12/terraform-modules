@@ -9,7 +9,7 @@
 # Replace your-s3-bucket-name and your-app.zip in the script.
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1" # Change to your desired region 
 }
 
 # Create Elastic Beanstalk application
