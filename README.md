@@ -31,7 +31,7 @@
 
    terraform fmt                       => To format the code
 
-   terraform vaidate                   => to vdalidate the syntax 
+   terraform validate                   => to vdalidate the syntax 
    
    terraform plan                       => To check the IAM plan
    
