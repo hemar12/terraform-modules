@@ -25,17 +25,19 @@
 
 
 ## To run a IAM user code. 
-   cd iam                               => change directory to "iam" folder. 
-   
-   terraform init                       => To initialize your reposotory 
-
-   terraform fmt                       => To format the code
-
-   terraform validate                   => to vdalidate the syntax 
-   
-   terraform plan                       => To check the IAM plan
-   
-   terraform apply --auto-approve       => To IAM apply 
+  ### TO change directory to "iam" folder
+   cd iam                            
+ ###  To initialize your reposotory
+ 
+   terraform init                       
+ ### To format the code
+   terraform fmt                     
+### To vdalidate the syntax 
+   terraform validate                  
+### To check the IAM plan 
+   terraform plan                      
+To IAM apply 
+   terraform apply --auto-approve       => 
    
    terraform destroy --auto-approve     => To destroy the resources created 
    
