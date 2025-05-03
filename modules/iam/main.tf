@@ -8,7 +8,7 @@ resource "aws_iam_user" "cloud-count" {
 }
 
 resource "aws_iam_user" "cloud-forset-user" {
-  for_each = toset(["sam", "pam", "kim", "tom"])
+  for_each = toset(["arun", "ram" , "varun"])
   name     = each.value
 }
 
