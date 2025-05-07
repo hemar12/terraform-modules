@@ -32,5 +32,4 @@ Architectures: $(dpkg --print-architecture)
 Signed-by: /etc/apt/keyrings/microsoft.gpg" | sudo tee /etc/apt/sources.list.d/azure-cli.sources
 sudo apt-get update
 sudo apt-get install azure-cli
-
-
+rm -rf awscliv2.zip
